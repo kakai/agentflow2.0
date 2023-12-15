@@ -4,7 +4,7 @@ window.addEventListener("message", async function(event) {
   let result;
   let error;
   try {
-    result = await function(...params);
+    result = await window.function(...params);
   } catch (e) {
     result = undefined;
     try {
