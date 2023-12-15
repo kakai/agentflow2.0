@@ -20,7 +20,7 @@ function(longurl, domain, extension) {
   };
 
   const data = fetch(`https://api.rebrandly.com/v1/links`, postOptions);
-  const json = data.json();
+  const json = data.json(); //no await here
   
   link = `https://${json.shortUrl}`
   
