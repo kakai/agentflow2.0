@@ -1,7 +1,7 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
-window.function = function(longurl, domain, extension) {
+function(longurl, domain, extension) {
   var link
   const rbheaders = {
       accept: 'application/json',
