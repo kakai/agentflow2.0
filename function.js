@@ -1,7 +1,7 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
-window.function = function(destination, extension) {
+window.function = function(longurl, domain, extension) {
   var link
   const rbheaders = {
       accept: 'application/json',
@@ -13,9 +13,9 @@ window.function = function(destination, extension) {
       method: 'POST',
       headers: rbheaders,
       body: JSON.stringify({
-          domain: { fullName: 'mteja.co' },
+          domain: { fullName: domain },
         slashtag: extension,
-          destination: destination
+          destination: longurl
       })
   };
 
