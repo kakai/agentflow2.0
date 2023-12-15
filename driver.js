@@ -4,7 +4,7 @@ window.addEventListener("message", async function(event) {
   let result;
   let error;
   try {
-    result = await window.function(...params);
+    result = await window.function(...params); //remove this wiindow thing
   } catch (e) {
     result = undefined;
     try {
