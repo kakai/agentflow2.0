@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "column",
+    "name": "Shorten URL",
+    "description": "Shorten a source long url string, into a destination root domain name and extension.",
+    "author": "Tony Kakai <clynton.kakai@gmail.com>",
+    "params": [
+      {
+        "name": "longurl",
+        "displayName": "Long URL",
+        "type": "string"
+      },
+      {
+        "name": "domain",
+        "displayName": "Domain",
+        "type": "string"
+      },
+      {
+        "name": "extension",
+        "displayName": "Extension",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
